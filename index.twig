@@ -1,0 +1,64 @@
+{{ include('partials/_header.twig') }}
+
+{% setcontent collectief = 'infoblokken/collectief' %}
+{% setcontent fondsen = 'infoblokken/fondsen-en-sponsoren' %}
+{% setcontent contact = 'infoblokken/contactinfo' %}
+{% setcontent partners = 'infoblokken/partners' %}
+{% setcontent tasjes = 'infoblokken/tasjes' %}
+{% setcontent publicatie = 'infoblokken/publicatie' %}
+{% setcontent geschiedenis = 'infoblokken/geschiedenis' %}
+{% setcontent vriend = 'infoblokken/vriend' %}
+{% setcontent thema = 'infoblokken/thema' %}
+
+<div class="container">
+      <h1>{{ app.config.get('general/sitename')}} - {{ app.config.get('general/payoff') }}</h1>
+
+      <div class="jumbotron" id="{{ thema.titel|lower }}">
+        <h1 class="h1">{{ thema.titel }}</h1>
+        {{ thema.tekst }}
+      </div>
+
+      <div class="jumbotron" id="{{ vriend.titel|lower }}">
+        <h1 class="h1">{{ vriend.titel }}</h1>
+        {{ vriend.tekst }}
+      </div>
+
+      <div class="jumbotron" id="{{ tasjes.titel|lower }}">
+        <h1 class="h1">{{ tasjes.titel }}</h1>
+        {{ tasjes.tekst }}
+      </div>
+
+      <div class="jumbotron" id="{{ publicatie.titel|lower }}">
+        <h1 class="h1">{{ publicatie.titel }}</h1>
+        {{ publicatie.tekst }}
+      </div>
+
+      <div class="jumbotron" id="{{ geschiedenis.titel|lower }}">
+        <h1 class="h1">{{ geschiedenis.titel }}</h1>
+        {{ geschiedenis.tekst }}
+      </div>
+
+      <div class="jumbotron" id="{{ collectief.titel|lower }}">
+        <h1 class="h1">{{ collectief.titel }}</h1>
+        {{ collectief.tekst }}
+      </div>
+
+      <div class="jumbotron" id="{{ partners.titel|lower }}">
+        <h1 class="h1">{{ partners.titel }}</h1>
+        {{ partners.tekst }}
+      </div>
+
+      <div class="jumbotron" id="{{ fondsen.titel|lower }}">
+        <h1 class="h1">{{ fondsen.titel }}</h1>
+        {{ fondsen.tekst }}
+      </div>
+
+      <div class="jumbotron" id="{{ contact.titel|lower }}">
+        <h1 class="h1">{{ contact.titel }}</h1>
+        {{ contact.tekst }}
+      </div>
+
+
+
+
+{{ include('partials/_footer.twig') }}

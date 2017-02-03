@@ -1,0 +1,36 @@
+{
+    "name": "oekeur/bolt-bootstrapexamples",
+    "description": "The examples from Bootstrap as a bolt theme.",
+    "type": "bolt-theme",
+    "keywords": ["theme", "bootstrap", "base", "simple", "showcase"],
+    "require": {
+        "bolt/bolt": "^3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Okeur",
+            "email": "o.e.keur@gmail.com"
+        }
+    ],
+    "extra": {
+        "bolt-screenshots": [
+            "screenshots/album.png",
+            "screenshots/blog.png",
+            "screenshots/carousel.png",
+            "screenshots/cover.png",
+            "screenshots/dashboard.png",
+            "screenshots/jumbotron-narrow.png",
+            "screenshots/jumbotron.png",
+            "screenshots/justified-nav.png",
+            "screenshots/navbar-fixed.png",
+            "screenshots/navbar-static.png",
+            "screenshots/navbar.png",
+            "screenshots/offcanvas.png",
+            "screenshots/sign-in.png",
+            "screenshots/starter-template.png",
+            "screenshots/sticky-footer-navbar.png",
+            "screenshots/sticky-footer.png",
+        ],
+    }
+}
