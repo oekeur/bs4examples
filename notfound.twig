@@ -7,14 +7,11 @@
 {% endblock title %}
 
 {% block main %}
-    <div class="row">
-        <div class="large-12 columns">
 
-        {# special case: See if we actually want the Styleguide. #}
-        {% if app.request.server.get('REQUEST_URI') == '/styleguide' %}
-            {{ include('styleguide.twig') }}
-        {% else %}
-            <h1>{{ record.title|default('404 not found') }}</h1>
+<div class="container">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">{{ record.title|default('404 not found') }}</h1>
 
             {% if fields(record) %}
                 {{ fields(record) }}
@@ -22,19 +19,9 @@
                 <p>
                     The requested page was not found.
                 </p>
-
-                <div class="primary callout" data-closable>
-                    <h5>Add a Blocks record with slug '404-not-found' to customize this message. </h5>
-                    <p>If it's not showing up here, doublecheck that the <tt>slug</tt> is correct, and that the Block is published.</p>
-                    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
             {% endif %}
-
-        {% endif %}
-
-        </div>
+      </div>
     </div>
+</div>
 
 {% endblock main %}

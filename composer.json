@@ -1,5 +1,5 @@
 {
-    "name": "oekeur/bolt-bootstrapexamples",
+    "name": "oekeur/bolt-bootstrap4examples",
     "description": "The examples from Bootstrap as a bolt theme.",
     "type": "bolt-theme",
     "keywords": ["theme", "bootstrap", "base", "simple", "showcase"],
@@ -32,5 +32,6 @@
             "screenshots/sticky-footer-navbar.png",
             "screenshots/sticky-footer.png",
         ],
+        "bolt-icon": "B4.png"
     }
 }

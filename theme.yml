@@ -1,8 +1,8 @@
 layout:
     # standard, album, cover, carousel, blog, dashboard
-    style:
+    style: standard
     # default, wide or narrow
-    width:
+    width: default
 
 # default, yes or no
 singlepage: default

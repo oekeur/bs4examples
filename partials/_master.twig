@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="no-js" lang="{{ htmllang() }}">
     <head>
@@ -9,9 +11,11 @@
         <link rel="icon" href="../../favicon.ico">
 
         <title>
+            {% block title %}
             {%- if record.title is defined %}{{ record.title|striptags }} | {% endif -%}
                 {{ app.config.get('general/sitename') -}}
             {% if record.title is not defined and app.config.get('general/payoff') %} | {{ app.config.get('general/payoff') }}{% endif -%}
+            {% endblock title %}
         </title>
 
         <!-- Add to homescreen for Chrome on Android -->
@@ -31,13 +35,28 @@
         <!-- Standard styles for this template -->
         <link rel="stylesheet" href="{{ paths.theme }}css/bootstrap.css">
         <!-- Custom styles for this template -->
-        <link href="{{ paths.theme }}album.css" rel="stylesheet">
+        <link href="{{ paths.theme }} .css" rel="stylesheet">
         <!-- Your own styles for this template -->
         <link rel="stylesheet" href="{{ paths.theme }}css/custom.css">
 
     </head>
         <body>
 
+        {% block nav %}
+
+        {% endblock nav %}
+
+        {% block header %}
+
+        {% endblock header %}
+
+        {% block main %}
+
+        {% endblock main %}
+
+        {% block footer %}
+
+        {% endblock footer %}
 
 
         <!-- Bootstrap core JavaScript

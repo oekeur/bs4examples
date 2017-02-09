@@ -47,12 +47,12 @@ offcanvas: default
 ```
 # Installation
 
-
-To install this theme, simply search for 'bs4examples' in Bolt's backend, and
+Do not install, still in development.
+<!-- To install this theme, simply search for 'bs4examples' in Bolt's backend, and
 click the buttons.
 
 Alternatively, download the `.zip` or `.tgz` file from the [oekeur/bolt-
 foundation-theme Github repository](https://github.com/oekeur/bolt-
 foundation-theme/releases). Extract the file, and place the `bs4examples` folder
 in your `theme` folder. Don't forget to set `theme: bs4examples` in your
-`config.yml` file.
+`config.yml` file. -->
