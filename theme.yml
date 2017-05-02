@@ -4,12 +4,12 @@ layout:
     # default, wide or narrow
     width: default
 
-# default, yes or no
+# default, true or false
 singlepage: default
 
 
 navbar:
-    # Possible options: default, no, top, sticky
+    # Possible options: default, false, top, sticky
     position: default
     # default, narrow or wide
     width: default
@@ -17,11 +17,14 @@ navbar:
     alignment: default
 
 footer:
-    # default (no) or yes
+    # default (false) or true
     sticky: default
 
-    # default (no) or yes
+    # default (false) or true
 offcanvas: default
+
+# default (true) or false
+search: default
 
 # Template filenames. If you 're creating a theme for distribution, you can specify
 # the filenames of the templates here. The templates you will set in this config
